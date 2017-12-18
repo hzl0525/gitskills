@@ -9,28 +9,37 @@
         <meta name="author" content="胡忠梁，huzl0525@163.com，huzhongliang1990@gmail.com">
         <link rel="icon" href="img/zhongliang.ico" type="image/x-icon">
         <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700"> -->
-        <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700"> -->
+        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container-fluid">
             <div class="navbar-header">
               <!-- 手机端布局 -->
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="# " aria-expanded="false">
+              <button type="button" class="navbar-toggle collapse.in" data-toggle="collapse" data-target="#toggle-navigation"
+              aria-expanded="false" aria-controls="#toggle-navigation">
+                <span class="sr-only">导航栏</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
+              <!-- 手机端布局 -->
               <a class="navbar-brand" href="#">胡忠梁</a>
             </div>
-            <div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href ="#hello">你好</a></li>
-                <li><a href ="#intro">自我介绍</a></li>
-                <li><a href ="#tech">技能</a></li>
-                <li><a href ="#programs">作品集</a></li>
-                <li><a href ="#power">特长</a></li>
-                <li><a href ="#contact">联系我</a></li>
+            <div class="navbar-collapse collapse" id="toggle-navigation">
+              <ul class="nav navbar-right nav-pills " role="tablist" >
+                <li class="active" role="presentation"><a href ="#hello">你好</a></li>
+                <li role="presentation"><a href ="#intro">自我介绍</a></li>
+                <li role="presentation"><a href ="#tech">技能</a></li>
+                <li role="presentation"><a href ="#programs">作品集</a></li>
+                <li role="presentation"><a href ="#power">特长</a></li>
+                <li role="presentation"><a href ="#contact">联系我</a></li>
               </ul>
             </div>
           </div>

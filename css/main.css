@@ -1,7 +1,42 @@
-/* html,body{
-  padding: 0;
-  margin:0;
-} */
+body{
+  padding-top: 70px;
+  background: #666;
+}
+nav.navbar{
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.container-fluid .navbar-header a.navbar-brand{
+  font-size: 21px;
+  color: rgba(255, 255, 255, 1);
+}
+.container-fluid .navbar-header a.navbar-brand:hover,:active,:focus{
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+}
+
+#toggle-navigation ul.nav{
+  margin-top: 5px;
+  font-size: 16px;
+}
+#toggle-navigation ul.nav a{
+  color: rgba(255, 255, 255, 0.9);
+}
+#toggle-navigation ul.nav a:hover, a:active, a:focus{
+  color: rgba(255, 255, 255, 1);
+  background:rgba(255, 255, 255, 0);
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
 .clearfix::after{
   content: ".";
   display: block;
