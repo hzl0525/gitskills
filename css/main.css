@@ -13,7 +13,7 @@ nav.navbar{
   font-size: 21px;
   color: rgba(255, 255, 255, 1);
 }
-.container .navbar-header a.navbar-brand:hover,:active,:focus{
+.container .navbar-header a.navbar-brand:hover,a:active,a:focus{
   color: rgba(255, 255, 255, 1);
   text-decoration: underline;
 }
@@ -28,7 +28,7 @@ nav.navbar{
 #toggle-navigation ul.nav li a{
   color: rgba(255, 255, 255, 0.9);
 }
-#toggle-navigation ul.nav li a:hover,:active,:focus{
+#toggle-navigation ul.nav li a:hover,a:active,a:focus{
   color: rgba(255, 255, 255, 1);
 }
 
@@ -42,14 +42,64 @@ nav.navbar{
 div.carousel-inner {
   height: 100%;
 }
-div.carousel-inner .item.slide1{
-  background-image: url(img/slide1.jpg);
+div.carousel-inner .item {
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
-div.carousel-inner .item.slide2{
-  background-image: url(img/slide2.jpg);
+div.carousel-inner div.slide1{
+  background-image: url(../img/slide1.jpg);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide1.jpg', sizingMethod='scale');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide1.jpg', sizingMethod='scale');
+}
+div.carousel-inner div.slide2{
+  background-image: url(../img/slide2.jpg);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide2.jpg', sizingMethod='scale');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide2.jpg', sizingMethod='scale');
+}
+
+div.carousel-inner div.slide1 .first-content{
+  width: 80%;
+  height: 80%;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0; top: 100px; bottom: auto;
+}
+
+@media (max-width: 575px) {
+    #carousel-mainSlide h1 {
+        font-size:2em
+    }
+
+    #carousel-mainSlide h2 {
+        font-size: 1.75rem
+    }
+
+    #carousel-mainSlide p {
+        font-size: 1rem;
+        /* max-width: 80% */
+    }
+
+    #carousel-mainSlide p.lead {
+        font-size: 1.25rem
+    }
+
+    #carousel-mainSlide .btn {
+        display: block
+    }
+
+    #carousel-mainSlide .btn+.btn {
+        margin-left: 0;
+        margin-top: .5rem
+    }
 }
 
 
+/* 自我介绍 */
 
 
 
