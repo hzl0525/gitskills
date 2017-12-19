@@ -2,16 +2,18 @@ body{
   padding-top: 70px;
   background: #666;
 }
+
+/* 导航栏 */
 nav.navbar{
   background: rgba(255, 255, 255, 0);
   border: none;
 }
 
-.container-fluid .navbar-header a.navbar-brand{
+.container .navbar-header a.navbar-brand{
   font-size: 21px;
   color: rgba(255, 255, 255, 1);
 }
-.container-fluid .navbar-header a.navbar-brand:hover,:active,:focus{
+.container .navbar-header a.navbar-brand:hover,:active,:focus{
   color: rgba(255, 255, 255, 1);
   text-decoration: underline;
 }
@@ -20,16 +22,32 @@ nav.navbar{
   margin-top: 5px;
   font-size: 16px;
 }
-#toggle-navigation ul.nav a{
+#toggle-navigation ul.nav li:not([class=active]) a {
+  background: rgba(255, 255, 255, 0);
+}
+#toggle-navigation ul.nav li a{
   color: rgba(255, 255, 255, 0.9);
 }
-#toggle-navigation ul.nav a:hover, a:active, a:focus{
+#toggle-navigation ul.nav li a:hover,:active,:focus{
   color: rgba(255, 255, 255, 1);
-  background:rgba(255, 255, 255, 0);
-  text-decoration: underline;
 }
 
-
+/* 滑动布局*/
+#carousel-mainSlide{
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 100%;
+}
+div.carousel-inner {
+  height: 100%;
+}
+div.carousel-inner .item.slide1{
+  background-image: url(img/slide1.jpg);
+}
+div.carousel-inner .item.slide2{
+  background-image: url(img/slide2.jpg);
+}
 
 
 
