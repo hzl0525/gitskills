@@ -64,9 +64,8 @@ div.carousel-inner div.slide1 .first-content p:last-child{
 }
 div.carousel-inner img{
   width:115px; height: 150px;
-  margin-top: 10%;
+  margin-top: 20%;
 }
-
 
 
  @media (max-width: 575px) {
@@ -75,16 +74,20 @@ div.carousel-inner img{
     }
 
     #carousel-mainSlide h2 {
-        font-size: 1.75rem
+        font-size: 2rem
     }
 
     #carousel-mainSlide p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         /* max-width: 80% */
     }
 
     #carousel-mainSlide p.lead {
-        font-size: 1.25rem
+        font-size: 1.5rem
+    }
+
+    #carousel-mainSlide img{
+        margin-top: 50%;
     }
 
     #carousel-mainSlide .btn {
@@ -103,6 +106,12 @@ div#intro{
   background-color: #337ab7;
   height:100%;
 }
+#intro .container{
+  display: flex;
+
+}
+
+
 
 
 div#tech{
