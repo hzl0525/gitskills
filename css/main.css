@@ -3,6 +3,9 @@ body{
   background: #666;
   color: #fff;
 }
+html,body{
+  height: 100%;
+}
 
 /* 导航栏 */
  nav.navbar{
@@ -17,9 +20,9 @@ body{
 .container .navbar-header a.navbar-brand:hover,a:active,a:focus{
   color: rgba(255, 255, 255, 1);
   text-decoration: underline;
-} 
+}
 
-/* #toggle-navigation ul.nav{
+ #toggle-navigation ul.nav{
   margin-top: 5px;
   font-size: 16px;
 }
@@ -34,17 +37,13 @@ body{
 }
 
 /* 滑动布局*/
-#carousel-mainSlide{
-  position: relative;
+#carousel-mainSlide,.carousel-inner{
   height: 100%;
 }
-/* div.carousel-inner {
-  height: 100%;
-}
+
 div.carousel-inner .item {
   height: 100%;
   width: 100%;
-  background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -60,14 +59,15 @@ div.carousel-inner div.slide2{
   -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/slide2.jpg', sizingMethod='scale');
 }
 
-div.carousel-inner div.slide1 .first-content{
-  width: 80%;
-  height: 80%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0; top: 100px; bottom: auto;
-} */
+div.carousel-inner div.slide1 .first-content p:last-child{
+
+}
+div.carousel-inner img{
+  width:115px; height: 150px;
+  margin-top: 10%;
+}
+
+
 
  @media (max-width: 575px) {
     #carousel-mainSlide h1 {
@@ -99,11 +99,16 @@ div.carousel-inner div.slide1 .first-content{
 
 
 /* 自我介绍 */
-div.intro{
-  background: @brand-primary;
-
+div#intro{
+  background-color: #337ab7;
+  height:100%;
 }
 
+
+div#tech{
+  background-color: gray;
+  height: 100%;
+}
 
 
 
