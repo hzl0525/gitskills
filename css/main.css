@@ -2,6 +2,7 @@ body{
   padding-top: 0;
   background: #666;
   color: #fff;
+  font-size: 17px;
 }
 html,body{
   height: 100%;
@@ -64,17 +65,17 @@ div.carousel-inner div.slide1 .first-content p:last-child{
 }
 div.carousel-inner img{
   width:115px; height: 150px;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 
  @media (max-width: 575px) {
     #carousel-mainSlide h1 {
-        font-size:2em
+        font-size:2em;
     }
 
     #carousel-mainSlide h2 {
-        font-size: 2rem
+        font-size: 2rem;
     }
 
     #carousel-mainSlide p {
@@ -83,35 +84,132 @@ div.carousel-inner img{
     }
 
     #carousel-mainSlide p.lead {
-        font-size: 1.5rem
+        font-size: 1.5rem;
     }
 
     #carousel-mainSlide img{
         margin-top: 50%;
-    }
-
-    #carousel-mainSlide .btn {
-        display: block
-    }
-
-    #carousel-mainSlide .btn+.btn {
-        margin-left: 0;
-        margin-top: .5rem
     }
 }
 
 
 /* 自我介绍 */
 div#intro{
-  background-color: #337ab7;
-  height:100%;
+  background-color: #2ac56c;
+  height: 100%;
 }
-#intro .container{
+#intro .container-fluid{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#intro .container-fluid .intro-content {
+  background-color:#16a085;
+  border-radius: 30px;
+  width: 80%;
+  padding-top: 3%;
+}
+#intro .container-fluid .intro-content .content-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
+#intro .container-fluid .intro-content .marker{
+  width:90px;
+  height: 90px;
+  color: black;
+  border-radius: 50px;
+  border:4px solid rgba(255,255,255,0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .container-fluid .intro-content .text{
+  padding:10px;
+
+}
+#intro .container-fluid .intro-content .text span{
+  padding-top:5px;
+  border-top:2px solid white;
+}
+/* 伪元素实现动态效果 */
+#intro .container-fluid .intro-content .text span{
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+}
+#intro .container-fluid .intro-content .text span:hover::before,.text span:hover::after{
+  	position: absolute;
+}
+#intro .container-fluid .intro-content .text span:hover::before{
+    content: "\5B";
+    left: -15px;
+}
+#intro .container-fluid .intro-content .text span:hover::after{
+    content: "\5D";
+    right: -15px;
+}
+
+#intro .container-fluid .intro-exp{
+  position: relative;
+  margin-top: 8%;
+  /* background-color:#16a085; */
+  width: 80%;
+  text-align: center;
+}
+#intro .container-fluid .intro-exp::before,.intro-exp::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+}
+#intro .container-fluid .intro-exp::before{
+  top:-5px;
+  left:-5px;
+  border-top: 3px solid #16a085;
+  border-left: 3px solid #16a085;
+}
+#intro .container-fluid .intro-exp::after{
+  bottom:-5px;
+  right:-5px;
+  border-right: 3px solid #16a085;
+  border-bottom: 3px solid #16a085;
+}
+#intro .container-fluid .intro-exp:hover::before,.intro-exp:hover::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+}
+#intro .container-fluid .intro-exp:hover::before{
+  top:0;
+  left:0;
+  border-top: 3px solid #5686D6;
+  border-left: 3px solid #5686D6;
+}
+#intro .container-fluid .intro-exp:hover::after{
+  bottom:0;
+  right:0;
+  border-right: 3px solid #5686D6;
+  border-bottom: 3px solid #5686D6;
 }
 
 
+
+
+@media (max-width: 768px) {
+  #intro .container-fluid {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+  }
+}
 
 
 div#tech{
