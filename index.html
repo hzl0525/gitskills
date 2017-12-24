@@ -8,14 +8,17 @@
         <meta name="keywords" content="zhongliangHu,胡忠梁,个人简历">
         <meta name="author" content="胡忠梁，huzl0525@163.com，huzhongliang1990@gmail.com">
         <link rel="icon" href="img/zhongliang.ico" type="image/x-icon">
-        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700"> -->
-        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700"> -->
+        <link rel="stylesheet" href="node/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node/Font-Awesome-master/css/font-awesome.min.css">
+        <script src="node/jquery/dist/jquery.min.js"></script>
+        <script src="node/bootstrap/dist/js/bootstrap.min.js"></script>
+
         <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+        <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+        <!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> -->
         <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -38,9 +41,8 @@
               <ul class="nav navbar-right nav-pills " role="tablist" >
                 <li class="active" role="presentation"><a href ="#hello">你好</a></li>
                 <li role="presentation"><a href ="#intro">自我介绍</a></li>
-                <li role="presentation"><a href ="#tech">技能</a></li>
+                <li role="presentation"><a href ="#skills">技能</a></li>
                 <li role="presentation"><a href ="#programs">作品集</a></li>
-                <li role="presentation"><a href ="#power">特长</a></li>
                 <li role="presentation"><a href ="#contact">联系我</a></li>
               </ul>
             </div>
@@ -48,7 +50,7 @@
         </nav>
         <!-- 滑动页面 -->
         <a name="hello"></a>
-        <div id="carousel-mainSlide" class="carousel slide" data-ride="carousel" data-interval="500000000">
+        <div id="carousel-mainSlide" class="carousel slide" data-ride="carousel" data-interval="5000">
           <ol class="carousel-indicators">
             <li data-target="#carousel-mainSlide" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-mainSlide" data-slide-to="1" ></li>
@@ -57,38 +59,28 @@
           <div class="carousel-inner" role="listbox">
             <div class="item slide1 active">
               <div class="first-content text-center">
-                <img src="img/Android.ico" class="img-rounded img-thumbnail">
+                <img src="img/id-photo-min.jpg" class="img-rounded img-thumbnail">
                 <h1>你好，我是胡忠梁</h1>
                 <h2 class="goals">求职目标：前端开发</h2>
-                <p class="lead">You can do anything you set your mind to, man</p>
+                <p class="lead">huzhongliang1990@gmail.com</p>
               </div>
               <div class="carousel-caption">
-                <a href="">
-                            <i class="fa fa-weibo">first</i>
-                </a>
-                <a href="">
-                            <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://plus.google.com/meathill">
-                            <i class="fa fa-google-plus"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/meathill/">
-                            <i class="fa fa-linkedin"></i>
+                <a target="blank" href="https://github.com/zhongliangHu/zhongliangHu.github.io">
+                    <i class="fa fa-github"></i>
                 </a>
               </div>
             </div>
             <div class="item slide2">
-              <div class="first-content text-center">
-                <img src="img/Android.ico" class="img-rounded img-thumbnail">
-                <h1>你好，我是胡忠梁</h1>
-                <h2 class="goals">求职目标：前端开发</h2>
+              <div class="second-content text-center">
+
+                <h1>放弃浙大博士，拥抱互联网</h1>
+                <h2 class="goals">热爱技术，热爱生活，路漫漫，砥砺前行！</h2>
                 <p class="lead">You can do anything you set your mind to, man</p>
               </div>
               <div class="carousel-caption">
-                <a href="">
-                            <i class="fa fa-weibo">second</i>
+                <a target="blank" href="https://github.com/zhongliangHu">
+                            <span class="fa fa-github"></span>
                 </a>
-                <p>second</p>
               </div>
             </div>
           </div>
@@ -105,6 +97,7 @@
         <!-- intro页面 -->
         <a name="intro"></a>
         <div id="intro">
+          <div class="title"><h2>关于我</h2></div>
           <div class="container-fluid" id="intro">
               <div class="intro-content row">
                   <div class="col-xs-6 col-sm-3  content-list">
@@ -125,23 +118,74 @@
                   </div>
               </div>
               <div class="intro-exp">
-                <p></p>
-                <p>2有限公司</p>
-                <p>2有限公司</p>
+                <p>2009.9-2013.6 浙江工业大学 生物与环境工程学院 学士</p>
+                <p>2013.9-2016.6 浙江工业大学 生物工程学院 “2011计划”-药物模拟 硕士</p>
+                <p>2016.9-2017.12 鲁沃夫(杭州)生物工程有限公司 研发人员</p>
+              </div>
+          </div>
+        </div>
+        <!-- skills页面 -->
+        <a name="skills"></a>
+        <div id="skills">
+          <div class="title"><h2>技能</h2></div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-xs-6">
+                      <header>
+                        <img src="img/html5.png" class="logo img-thumbnail">
+                        <h3>HTML</h3>
+                      </header>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                          <span class="sr-only">90% Complete</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                      <header>
+                          <img src="img/css3.png" class="logo img-thumbnail">
+                          <h3>CSS</h3>
+                      </header>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                          <span class="sr-only">85% Complete</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                      <header>
+                          <img src="img/js.png" class="logo img-thumbnail">
+                          <h3>JavaScript</h3>
+                      </header>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                          <span class="sr-only">80% Complete</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                      <header>
+                          <img src="img/Knockout.png" class="logo img-thumbnail">
+                          <h3>Knockout</h3>
+                      </header>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                          <span class="sr-only">70% Complete</span>
+                        </div>
+                      </div>
+                  </div>
+
               </div>
           </div>
         </div>
 
-        <a name="tech"></a>
-        <div id="tech">
-        </div>
-
         <a name="programs"></a>
         <div id="programs">
+
         </div>
 
-        <a name="power"></a>
-        <div id="power">
+        <a name="footer"></a>
+        <div id="footer">
         </div>
 
 
