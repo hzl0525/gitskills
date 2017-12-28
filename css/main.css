@@ -349,6 +349,9 @@ div#intro{
   #carousel-programs .carousel-inner .item .row{
     flex-direction: column;
   }
+  #carousel-programs .carousel-inner .item article{
+    margin-bottom: 5rem;
+  }
 }
 
 #footer{
