@@ -42,7 +42,7 @@
 此项目是基于谷歌地图的单页应用，可快速搜索查找全国各城市的高校。使用第三方**Google Maps API**内的places库和搜索自动完成进行搜索不同城市的高校，同时将返回的高校信息利用**Knockout.js框架(MVVM模式)** 自动绑定生成高校信息列表。每个高校地点利用**Ajax**从**百度地图Web服务API**中异步获取天气情况，实现用户点击该处标记时提供详细信息。
 项目[\[Github代码库\]](https://github.com/zhongliangHu/neighborhood-map-program) [\[Demo\]\(需科学上网\)](https://zhonglianghu.github.io/neighborhood-map-program/)
 
-### Jamine测试项目
+### Jasmine测试项目
 该项目是基于Web的RSS反馈阅读应用程序。利用面向行动驱动开发(BDD)的**Jasmine单元测试框架**对应用程序的**底层业务逻辑、JavaScript事件处理和DOM操作**等方面进行测试。编写的测试套件对HTML/CSS/JS的多层面测试，分析结果信息于页面下方详细显示需求是否通过，免去了手动测试代码库功能的麻烦。
 项目[\[Github代码库\]](https://github.com/zhongliangHu/Feed-Reader-Testing) [\[Demo\]](https://zhonglianghu.github.io/Feed-Reader-Testing/)
 

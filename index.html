@@ -62,7 +62,7 @@
                 <img src="img/id-photo-min.jpg" class="img-rounded img-thumbnail">
                 <h1>你好，我是胡忠梁</h1>
                 <h2 class="goals">求职目标：前端开发</h2>
-                <p class="lead">huzhongliang1990@gmail.com</p>
+                <p class="lead">huzhongliang1990@gmail.com <br>15068823573</p>
               </div>
               <div class="carousel-caption">
                 <a target="blank" href="https://github.com/zhongliangHu/zhongliangHu.github.io">
@@ -73,9 +73,9 @@
             <div class="item slide2">
               <div class="second-content text-center">
 
-                <h1>放弃浙大博士，拥抱互联网</h1>
-                <h1 class="goals">热爱技术，热爱生活，路漫漫，砥砺前行！</h1>
-                <p class="lead">You can do anything you set your mind to, man</p>
+                <h1>打碎枷锁，拥抱IT</h1>
+                <h2 class="goals">真的勇士，敢于直面惨淡的warning、敢于正视淋漓的error</h2>
+                <p class="lead">I code, therefore I am.</p>
               </div>
               <div class="carousel-caption">
                 <a target="blank" href="https://github.com/zhongliangHu">
@@ -174,20 +174,147 @@
                         </div>
                       </div>
                   </div>
-
               </div>
           </div>
         </div>
 
         <a name="programs"></a>
         <div id="programs">
+            <div id="carousel-programs" class="carousel slide" data-ride="carousel" data-interval="8000">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-programs" data-slide-to="0"></li>
+                <li data-target="#carousel-programs" data-slide-to="1"></li>
+                <li data-target="#carousel-programs" data-slide-to="2"></li>
+                <li data-target="#carousel-programs" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner container" role="listbox">
+                <div class="title"><h2>作品</h2></div>
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 pics">
+                      <a href="https://zhonglianghu.github.io/Arcade-Game/" target="blank">
+                        <img src="img/demo1-2.jpg" alt="demo1">
+                      </a>
+                    </div>
+                    <article class="col-xs-12 col-sm-6">
+                      <h2 class="text-center">经典街机游戏项目</h2>
+                      <p class="labels text-center">
+                        <span class="label label-danger">Prototype</span>
+                        <span class="label label-primary">Canvas</span>
+                      </p>
+                      <ul>
+                        <li>使用<strong>面向对象的JavaScript</strong>构建游戏主循环引擎</li>
+                        <li>使用<strong>HTML5 Canvas</strong>实现经典街机游戏“青蛙过河”界面的渲染</li>
+                        <li>创建玩家和敌人的类(构造函数)并设定其原型(<strong>prototype</strong>)属性来设计玩家和敌人速度等游戏机制</li>
+                        <li>通过JavaScript面向对象的编程、<strong>闭包</strong>等的使用优化游戏性能</li>
+                        <li>
+                          <a href="https://github.com/zhongliangHu/Arcade-Game" target="blank" class="fa fa-github-square">代码库</a>
+                          |
+                          <a href="https://zhonglianghu.github.io/Arcade-Game/" target="blank" class="fa fa-chain">Demo</a>
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 pics">
+                      <a href="https://zhonglianghu.github.io/Website-Performance-Optimization/" target="blank">
+                        <img src="img/demo2-2.jpg" alt="demo2">
+                      </a>
+                    </div>
+                    <article class="col-xs-12 col-sm-6">
+                      <h2 class="text-center">网站优化项目</h2>
+                      <p class="labels text-center">
+                        <span class="label label-danger">Chrome开发者工具</span>
+                        <span class="label label-primary">性能优化</span>
+                        <span class="label label-success">用户体验</span>
+                      </p>
+                      <ul>
+                        <li>主要对网站进行性能优化，使用<strong>Chrome开发者工具</strong>查看应用程序内页面状态，分析程序HTML/CSS及JS代码</li>
+                        <li>通过<strong>优化关键渲染路径</strong>，使用<strong>Gulp</strong>构建工具自动化压缩图片处理，使页面在PageSpeed Insights得分在90分以上</li>
+                        <li>通过优化JavaScript，避免CSS渲染阻塞等操作提升页面性能使其以<strong>60帧/秒以上</strong>运行，提高用户体验质量</li>
+                        <li>
+                          <a href="https://github.com/zhongliangHu/Website-Performance-Optimization" target="blank" class="fa fa-github-square">代码库</a>
+                          |
+                          <a href="https://zhonglianghu.github.io/Website-Performance-Optimization/" target="blank" class="fa fa-chain">Demo</a>
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 pics">
+                      <a href="https://zhonglianghu.github.io/neighborhood-map-program/" target="blank">
+                        <img src="img/demo3-1.jpg" alt="demo2">
+                      </a>
+                    </div>
+                    <article class="col-xs-12 col-sm-6">
+                      <h2 class="text-center">谷歌地图项目</h2>
+                      <p class="labels text-center">
+                        <span class="label label-danger">Google Maps API</span>
+                        <span class="label label-primary">Ajax</span>
+                        <span class="label label-success">Knockout</span>
+                      </p>
+                      <ul>
+                        <li>使用<strong>Google Maps API</strong>开发的单页应用，可快速搜索全国各城市附近高校</li>
+                        <li>使用API内的<strong>“places库”</strong>和<strong>“搜索自动”完成</strong>进行搜索不同城市的高校，将返回的高校信息利用<strong>Knockout框架(MVVM模式)</strong>生成高校信息列表</li>
+                        <li> 高校地点利用<strong>Ajax</strong>从<strong>百度地图Web服务API</strong>中异步获取天气情况，实现用户点击该处标记时提供详细信息</li>
+                        <li>
+                          <a href="https://github.com/zhongliangHu/neighborhood-map-program" target="blank" class="fa fa-github-square">代码库</a>
+                          |
+                          <a href="https://zhonglianghu.github.io/neighborhood-map-program/" target="blank" class="fa fa-chain">Demo</a>
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 pics">
+                      <a href="https://zhonglianghu.github.io/Feed-Reader-Testing/" target="blank">
+                        <img src="img/demo4-1.jpg" alt="demo2">
+                      </a>
+                    </div>
+                    <article class="col-xs-12 col-sm-6">
+                      <h2 class="text-center">Jasmine测试项目</h2>
+                      <p class="labels text-center">
+                        <span class="label label-danger">Jasmine</span>
+                        <span class="label label-success">分析测试</span>
+                      </p>
+                      <ul>
+                        <li>使用面向行动驱动开发(BDD)的<strong>Jasmine单元测试框架</strong>对应用程序的底层业务逻辑、JavaScript事件处理和DOM操作等方面进行测试</li>
+                        <li>编写的测试套件对HTML/CSS/JS的多层面测试，页面下方显示分析的详细结果，免去了手动测试代码库功能的繁琐</li>
+                        <li>
+                          <a href="https://github.com/zhongliangHu/Feed-Reader-Testing" target="blank" class="fa fa-github-square">代码库</a>
+                          |
+                          <a href="https://zhonglianghu.github.io/Feed-Reader-Testing/" target="blank" class="fa fa-chain">Demo</a>
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+              </div>
 
+              <a class="left carousel-control" href="#carousel-programs" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">向前</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-programs" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">向后</span>
+              </a>
+            </div>
         </div>
 
         <a name="footer"></a>
         <div id="footer">
+          <a target="blank" href="https://github.com/zhongliangHu">
+                      <span class="fa fa-github fa-2x"></span>
+          </a>
+          <p>Copyright @ 2017 Huzhongliang，保留所有权利 &nbsp;|&nbsp; 当前版本：1.0.0 &nbsp;|&nbsp; <a href="https://github.com/zhongliangHu/zhongliangHu.github.io" target="_blank"><i class="fa fa-github"></i> 源代码</a></p>
         </div>
-
 
         <script>
           $("ul.nav li a").click(function(){
@@ -195,8 +322,5 @@
             $(this).parent().addClass("active");
           });
         </script>
-
-
-
     </body>
 </html>

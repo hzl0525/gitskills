@@ -72,7 +72,7 @@ div.carousel-inner p.lead{
 }
 div.carousel-inner img{
   width:115px; height: 150px;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 div.carousel-inner .carousel-caption a{
   font-size: 2em;
@@ -99,7 +99,7 @@ div.carousel-inner .carousel-caption a{
     }
 
     #carousel-mainSlide img{
-        margin-top: 40%;
+        margin-top: 30%;
     }
 }
 
@@ -110,12 +110,12 @@ div#intro{
   box-sizing: border-box;
   /* position:relative; */
 }
-#intro .title{
+ .title{
   width: 19%;
   margin: 0 auto 1rem;
   text-align: center;
 }
-#intro .title h2{
+ .title h2{
   padding-top: 10px;
   margin-top: 0;
   border-bottom: 3px solid #fff;
@@ -226,8 +226,6 @@ div#intro{
 }
 
 
-
-
 @media (max-width: 768px) {
   #intro h2 {
     font-size: 2rem;
@@ -300,13 +298,66 @@ div#intro{
 
 
 #programs{
-  background-color: #f19f0f;
+  background-color: #ffc107;
+  /* height: 100%; */
+}
+#carousel-programs {
   height: 100%;
 }
+#carousel-programs .carousel-inner{
+  /* border: 10px solid red; */
+}
+#carousel-programs .carousel-inner .item .row{
+  /* border: 5px solid green; */
+  padding-left: 8%;
+  padding-right: 8%;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel-programs .carousel-inner .item .pics img{
+  /* border: 5px solid pink; */
+  width: 100%;
+  height: auto;
+  margin:15% auto;
+}
+#carousel-programs .carousel-inner article{
+  /* border: 5px solid blue; */
+  margin:auto;
+}
+#carousel-programs .carousel-inner article ul li{
+  font-size: 1.8rem;
+  line-height: 2;
+}
+#carousel-programs .carousel-inner article ul li strong{
+  /* color: rgba(100,100,100,1); */
+}
+
+@media (max-width: 768px) {
+  #programs h2 {
+    font-size: 2rem;
+  }
+  #programs .container h3 {
+    font-size: 1em;
+  }
+  #programs p {
+      font-size: 1.5rem;
+      /* max-width: 80% */
+  }
+  #carousel-programs .carousel-inner .item .row{
+    flex-direction: column;
+  }
+}
+
 #footer{
   background-color: #435a6b;
-  height: 100%;
+  line-height: 2.5em;
+  text-align: center;
 }
+
+
 
 
 .clearfix::after{
