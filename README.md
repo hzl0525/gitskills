@@ -1,6 +1,7 @@
 # 胡忠梁简历
 
-**Online version(制作当中): https://zhonglianghu.github.io/**
+**Online version: https://zhonglianghu.github.io/**
+**PDF Online version: https://zhonglianghu.github.io/huzhongliangResume/**
 
 # 联系方式
 
@@ -26,8 +27,8 @@
 
 # 工作经历
 
-###  鲁沃夫(杭州)生物工程有限公司 （ 2016年9月 ~ 2017年12月 ）
- 部门/岗位：研发部/研发技术人员
+###  杭州鲁沃夫有限公司 （ 2016年9月 ~ 2017年12月 ）
+ 部门/岗位：广告策划部/前端开发
 ## 项目作品经验
 ### 经典游戏项目
 此项目主要应用了**面向对象的JavaScript**构建游戏主循环引擎，使用**HTML5 Canvas**实现经典街机游戏“青蛙过河”界面的渲染。项目中创建玩家和敌人的类(构造函数)并设定其原型(prototype)属性来设计玩家和敌人速度等游戏机制，通过JavaScript面向对象的编程、**闭包**等的使用优化游戏性能。   
